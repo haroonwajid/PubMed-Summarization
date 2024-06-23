@@ -1,0 +1,26 @@
+
+Collecting usage statistics. To deactivate, set browser.gatherUsageStats to false.
+
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:80
+  Network URL: http://172.28.0.12:80
+  External URL: http://35.227.140.123:80
+
+
+Collecting usage statistics. To deactivate, set browser.gatherUsageStats to false.
+
+2024-06-23 16:45:51.597 Port 8080 is already in use
+
+Collecting usage statistics. To deactivate, set browser.gatherUsageStats to false.
+
+2024-06-23 16:47:31.903 Port 8080 is already in use
+
+Collecting usage statistics. To deactivate, set browser.gatherUsageStats to false.
+
+2024-06-23 16:49:00.036 Port 80 is already in use
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.

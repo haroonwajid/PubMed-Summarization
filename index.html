@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PubMed Article Summarizer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+        input[type="file"], input[type="submit"] {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .error {
+            color: red;
+            font-style: italic;
+        }
+        .article-container {
+            margin-top: 20px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .article-text, .summary-text {
+            white-space: pre-wrap; /* Preserve line breaks */
+        }
+    </style>
+</head>
+<body>
+    <h1>PubMed Article Summarizer</h1>
+    <form action="/" method="post" enctype="multipart/form-data">
+        <h3>Upload a text file:</h3>
+        <input type="file" name="file" accept=".txt"><br><br>
+        <h3>Or input article text:</h3>
+        <textarea name="text" rows="10" cols="80"></textarea><br><br>
+        <input type="submit" value="Summarize">
+    </form>
+
+    {% if original_text %}
+    <div class="article-container">
+        <h2>Original Article:</h2>
+        <div class="article-text">{{ original_text }}</div>
+
+        <h2>Summarized Version:</h2>
+        <div class="summary-text">{{ summarized_text }}</div>
+    </div>
+    {% elif error %}
+    <p class="error">{{ error }}</p>
+    {% endif %}
+</body>
+</html>

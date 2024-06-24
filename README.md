@@ -75,3 +75,16 @@ The application flow consists of the following main sections:
 1. **Clone the Repository**: Clone this repository to your local machine using Git.
    ```sh
    git clone https://github.com/haroonwajid/PubMed-Summarization.git
+- **Install Dependencies**: Use `pip` to install all the required Python packages.
+  ```sh
+  pip install -r requirements.txt
+### Usage:
+1. **Login:** Users log in using their credentials. If they are new, they can sign up for an account.
+2. **Upload or Enter Article:** Users can either upload a text file containing the article or enter the article text directly.
+3. **Select Summary Style:** Users choose between a brief or detailed summary.
+4. **Generate Summary:** Upon clicking the summarize button, the application processes the article and generates a summary.
+5. **View and Save Summaries:** Generated summaries are displayed and automatically saved to the user's account. Users can view all their saved summaries in the application.
+
+## Conclusion:
+The PubMed Article Summarizer project showcases the application of NLP models for summarizing scientific articles. It provides a user-friendly web interface for users to interact with and manage their summaries. By leveraging Streamlit and MongoDB, the application ensures a seamless and secure user experience.
+

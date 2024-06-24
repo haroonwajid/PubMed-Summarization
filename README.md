@@ -2,7 +2,7 @@
 This project aims to create a web application for summarizing PubMed articles using Natural Language Processing (NLP) models. The development process encompasses data exploration, model selection, fine-tuning, and web application development.
 
 # Table of Contents
--Introduction
+Introduction
 Data Exploration
 Model Selection and Fine-Tuning
 Web Application Development

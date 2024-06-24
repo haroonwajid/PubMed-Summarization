@@ -14,7 +14,7 @@ This project aims to create a web application for summarizing PubMed articles us
 
 ## Introduction
 
-The PubMed Article Summarizer is a tool that leverages advanced NLP techniques to provide concise summaries of scientific articles. This project uses the T5 transformer model for text summarization and offers an interactive web interface for users to upload articles and receive summaries.
+The PubMed Article Summarizer leverages Generative AI to provide concise, accurate summaries of scientific articles from PubMed. By utilizing state-of-the-art Natural Language Processing (NLP) techniques, specifically the T5 transformer model, this project aims to streamline the process of information retrieval and synthesis for researchers, students, and professionals in the medical and scientific communities. The development process encompasses data exploration, model selection, fine-tuning, and the creation of an intuitive web application interface.
 
 ## Data Exploration
 
@@ -78,6 +78,8 @@ The application flow consists of the following main sections:
 - **Install Dependencies**: Use `pip` to install all the required Python packages.
   ```sh
   pip install -r requirements.txt
+2. This Project was done on Google Colab environment which help in the execution with a could based deployment.
+  
 ### Usage:
 1. **Login:** Users log in using their credentials. If they are new, they can sign up for an account.
 2. **Upload or Enter Article:** Users can either upload a text file containing the article or enter the article text directly.
@@ -86,5 +88,5 @@ The application flow consists of the following main sections:
 5. **View and Save Summaries:** Generated summaries are displayed and automatically saved to the user's account. Users can view all their saved summaries in the application.
 
 ## Conclusion:
-The PubMed Article Summarizer project showcases the application of NLP models for summarizing scientific articles. It provides a user-friendly web interface for users to interact with and manage their summaries. By leveraging Streamlit and MongoDB, the application ensures a seamless and secure user experience.
+The integration of Generative AI models in the PubMed Article Summarizer project showcases the transformative potential of NLP technologies in the realm of scientific research. By providing a user-friendly web interface, the application not only simplifies the task of summarizing complex scientific articles but also ensures that the process is accessible to users with varying levels of technical expertise. The use of Streamlit for the front-end and MongoDB for secure user data management underscores the project's commitment to both functionality and security. As a result, the PubMed Article Summarizer stands as a testament to how AI-driven tools can enhance productivity and knowledge dissemination in the scientific community.
 
